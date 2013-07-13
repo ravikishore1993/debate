@@ -1,0 +1,25 @@
+<VirtualHost *:80>
+    ServerAdmin ravi@rkravi.com
+    ServerName debate.ravi.local
+
+    # Change the below two lines
+    # with the absolute path 
+
+    DocumentRoot /var/www/debate/public/
+    
+    <Directory /var/www/debate/public/>
+        Order allow,deny
+        allow from all
+        Options -Indexes
+        <IfModule mod_rewrite.c>
+            RewriteEngine On
+            RewriteCond %{REQUEST_FILENAME} !-f
+            RewriteRule ^ index.php [QSA,L]
+        </IfModule>
+    </Directory>
+
+    ErrorLog /var/log/apache2/debate.error.log
+    LogLevel debug
+    CustomLog /var/log/apache2/debate.access.log combined
+</VirtualHost>
+
