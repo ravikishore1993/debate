@@ -1,0 +1,25 @@
+.videos {
+	margin: 10px 0;
+	height: 100px;
+	background: #DDD;
+}
+
+.post-content{
+	background: #99A;
+	height: 460px;
+	border: 2px #9AF solid;
+	border-radius: 5px;
+	overflow: auto;
+}
+.post{
+	background: #FFF;
+	border-top: 1px #ABF solid;
+	border-bottom: 1px #ABF solid;
+	padding: 12px 0;
+}
+.post:hover{
+	background: #DDF;
+	border-top: 1px #ABF solid;
+	border-bottom: 1px #ABF solid;
+	padding: 12px 0;
+}

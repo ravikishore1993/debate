@@ -1,0 +1,33 @@
+html,
+body{
+	background: #013;
+    height: 100%; 
+    padding: 0;
+    margin: 0;
+}
+#wrapper{
+	width: 90%;
+	margin: 0 auto;
+	background: #EEF;
+	height: 92%;
+	padding: 0 15px;
+}
+.header{
+	height: 40px;
+
+	background-color: #859dff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#859dff), to(#0066FF));
+	background-image: -webkit-linear-gradient(top, #859dff, #0066FF);
+	background-image:    -moz-linear-gradient(top, #859dff, #0066FF);
+	background-image:      -o-linear-gradient(top, #859dff, #0066FF);
+	background-image:         linear-gradient(to bottom, #859dff, #0066FF);
+
+	color: #FFF;
+	font-size: 30px;
+	font-family: Helvetica;
+	letter-spacing: 0;
+	border-bottom: 2px #06F solid;
+}
+.header em{
+	margin-left: 50px;
+}
