@@ -1,0 +1,21 @@
+{
+  "name": "opentok",
+  "description": "OpenTokSDK for node.js",
+  "version": "0.3.3",
+  "homepage": "https://github.com/bsstoner/opentok",
+  "repository": "https://github.com/bsstoner/opentok.git",
+  "author": "Brian Stoner <bsstoner@gmail.com> (http://brianstoner.com)",
+  "main": "./lib/opentok",
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies" : {  
+    "opentok" : "0.3.x"  
+} ,
+  "devDependencies": {
+    "jasmine-node" : "1.0.x"
+  }
+}
