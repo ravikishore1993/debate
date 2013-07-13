@@ -31,3 +31,17 @@ body{
 .header em{
 	margin-left: 50px;
 }
+.header a{
+	text-decoration: none;
+}
+.logo{
+	color: #FFF;
+	margin: 0;
+	padding: 6px 25px;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+.logo:hover{
+	cursor: pointer;
+	background: rgba(255,255,255,0.2);
+}
