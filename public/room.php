@@ -10,7 +10,9 @@
 <script type="text/javascript" src="/js/jquery-1.10.1.min.js"></script>	
 </head>
 <script type="text/javascript">
-
+	sess = "<? session_start(); $_SESSION['session'] = $session; echo $session; ?>";
+	$(document).ready(function(){
+	});
 </script>
 <body>
 	 <div id="myPublisherDiv"></div>
@@ -59,48 +61,23 @@
 	<div class="pure-g">
 		<div class="pure-u-1-2 lposts">
 			<div class="pure-u-1 post-content">
-				<div id="post-1" class="pure-u-1 post">Test post</div>
-				<div id="post-1" class="pure-u-1 post">Test post 2</div>
-				<div id="post-1" class="pure-u-1 post">Test post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdf</div>
-				<div id="post-1" class="pure-u-1 post">Test post haha</div>
-				<div id="post-1" class="pure-u-1 post">another Test post</div>
-				<div id="post-1" class="pure-u-1 post">Test post</div>
-				<div id="post-1" class="pure-u-1 post">Test post</div>
+				
 			</div>
 			<div class="post-input">
-				<form class="pure-form">
-					<input type="text" class="pure-input-1-2" placeholder="Your opinion">
-					<input type="submit" class="pure-button pure-input-5-9 pure-button-primary">
+				<form class="pure-form" action="">
+					<input type="text" id="for-text" class="pure-input-1-2" placeholder="Your opinion">
+					<input type="submit" id="for-button" class="pure-button pure-input-5-9 pure-button-primary">
 				</form>
 			</div>
 		</div>
 		<div class="pure-u-1-2 rposts">
 			<div class="pure-u-1 post-content">
-				<div id="post-1" class="pure-u-1 post">Test post</div>
-				<div id="post-1" class="pure-u-1 post">Test post 2</div>
-				<div id="post-1" class="pure-u-1 post">Test post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdf</div>
-				<div id="post-1" class="pure-u-1 post">Test post</div>
-				<div id="post-1" class="pure-u-1 post">Test post 2</div>
-				<div id="post-1" class="pure-u-1 post">Test post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdf</div>
-				<div id="post-1" class="pure-u-1 post">Test post haha</div>
-				<div id="post-1" class="pure-u-1 post">another Test post</div>
-				<div id="post-1" class="pure-u-1 post">Test post</div>
-				<div id="post-1" class="pure-u-1 post">Test post 2</div>
-				<div id="post-1" class="pure-u-1 post">Test post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdf</div>
-				<div id="post-1" class="pure-u-1 post">Test post haha</div>
-				<div id="post-1" class="pure-u-1 post">another Test post</div>
-				<div id="post-1" class="pure-u-1 post">Test post</div>
-				<div id="post-1" class="pure-u-1 post">Test post 2</div>
-				<div id="post-1" class="pure-u-1 post">Test post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdfTest post kdjfnkladsd asfljn oaisdhoin iaofijaoui ha ia ji a wdf</div>
-				<div id="post-1" class="pure-u-1 post">Test post haha</div>
-				<div id="post-1" class="pure-u-1 post">another Test post</div>
-				<div id="post-1" class="pure-u-1 post">Test post</div>
-				<div id="post-1" class="pure-u-1 post">Test post</div>
+				
 			</div>
 			<div class="post-input">
 				<form class="pure-form">
-					<input type="text" class="pure-input-1-2" placeholder="Your opinion">
-					<input type="submit" class="pure-button pure-input-5-9 pure-button-primary">
+					<input type="text" id ="against-text" class="pure-input-1-2" placeholder="Your opinion">
+					<input type="submit" id="against-button" class="pure-button pure-input-5-9 pure-button-primary">
 				</form>
 			</div>
 		</div>

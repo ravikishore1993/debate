@@ -1,6 +1,5 @@
 <?php
 
-require 'config.php';    
 require 'Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
 
@@ -12,6 +11,9 @@ $app = new \Slim\Slim(
     );
 
 $app->get('/room/:name', function ($name) use ($app) {
+		
+	require 'config.php';    
+
     require_once 'SDK/API_Config.php';
     require_once 'SDK/OpenTokSDK.php';
     $secret = $CONFIG['secret'] ;
@@ -33,7 +35,6 @@ $db = new PDO('mysql:host=localhost;dbname=debate;charset=utf8', 'test', 'test')
     else{
     	$sessionc = $apiObj->create_session($_SERVER["REMOTE_ADDR"]);
         $session = $sessionc->getSessionId();
-        print_r($sessionc);
     	$db->query("insert into rooms (name,session) values ('".$name."','".$session."') " );
     }
 
@@ -42,6 +43,18 @@ $db = new PDO('mysql:host=localhost;dbname=debate;charset=utf8', 'test', 'test')
     $app->render('room.php',array('session' => $session , 'token' => $token ));
 });
 
+$app->post('/submit', function () use ($app) {
+	$app->render('submit.php');
+});
+
+$app->get('/for', function () use ($app) {
+	$app->render('for.php');
+});
+
+
+$app->get('/against', function () use ($app) {
+	$app->render('against.php');
+});
 $app->run();
 
 ?>
