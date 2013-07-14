@@ -95,7 +95,7 @@
 			<div class="post-input">
 				<form class="pure-form">
 					<input type="text" id ="against-text" class="pure-input-1-2" placeholder="Your opinion">
-					<input type="submit" id="against-button" class="pure-button pure-input-5-9 pure-button-primary">
+					<input type="submit" id="against-button" class="pure-button pure-input-5-9 pure-button-primary" >
 				</form>
 			</div>
 		</div>

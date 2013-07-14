@@ -33,3 +33,21 @@
 	height: 200px !important;
 	width: 200px !important;
 	}
+
+	#for-button{
+		width: 24%;
+	}
+
+	#for-text{
+		border-radius: 0;
+		width: 75%;
+	}
+
+		#against-button{
+		width: 24%;
+	}
+
+	#against-text{
+		border-radius: 0;
+		width: 75%
+	}
