@@ -17,8 +17,9 @@
 		nick = "anonymous";
 		
     $( "#nick" ).dialog();
-  	$('#nickbutton').click(function(){
+  	$('.nickbutton').click(function(){
   		nick = $('#nickvalue').val();
+  		side = $(this).attr('name');
   	$( "#nick" ).remove();	
   	});
 	});
@@ -91,7 +92,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="nick">Your Name<input type="text" id="nickvalue"><button id="nickbutton">Submit</button></div>
+	<div id="nick">Your Name<input type="text" id="nickvalue"><br><button class="nickbutton" name="support">Support</button><button class="nickbutton" name="against">Against</button></div></div>
 </div>
 
 <script type="text/javascript" src="/js/TB.js"></script>
