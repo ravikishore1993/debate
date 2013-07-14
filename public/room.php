@@ -97,7 +97,7 @@
 
 <script type="text/javascript" src="/js/TB.js"></script>
 <script type="text/javascript" src="/js/roomui.js"></script>
-<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="/js/room.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 </body>
 </html>
