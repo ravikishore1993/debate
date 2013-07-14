@@ -4,7 +4,7 @@ $(document).ready(
           $.ajax({
            type: "POST",
            url: '/submit',
-           data: {'message':$('#for-text').val() , 'side':'for' , 'session':sess,'time':new Date().getTime()}, // serializes the form's elements.
+           data: {'message':$('#for-text').val() , 'side':'for' ,'nick':nick ,'session':sess,'time':new Date().getTime()}, // serializes the form's elements.
            success: function(data)
            {$('#for-text').val("");
            }
@@ -17,7 +17,7 @@ $(document).ready(
           $.ajax({
            type: "POST",
            url: '/submit',
-           data: {'message':$('#against-text').val() , 'side':'against' , 'session':sess,'time':new Date().getTime()}, // serializes the form's elements.
+           data: {'message':$('#against-text').val() , 'side':'against','nick':nick , 'session':sess,'time':new Date().getTime()}, // serializes the form's elements.
            success: function(data)
            {
             $('#against-text').val("");
@@ -36,7 +36,7 @@ function forcheck(){
   $.ajax({
   url: '/for',
   data: {'id':lid,'session':sess},
-  success: function(data){console.log(data);
+  success: function(data){
     data = JSON.parse(data);
   for(i=0;i<data.length;i++){
       addLpost(data[i]);
@@ -55,7 +55,7 @@ function againstcheck(){
   $.ajax({
   url: '/against',
   data: {'id':rid,'session':sess},
-  success: function(data){console.log(data);
+  success: function(data){
     data = JSON.parse(data);
     for(i=0;i<data.length;i++){
       addRpost(data[i]);
