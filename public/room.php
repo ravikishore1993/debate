@@ -4,24 +4,13 @@
 	<title>Debates</title>
 	<link rel="stylesheet" type="text/css" href="/css/pure-min.css">
 	<link rel="stylesheet" type="text/css" href="/css/base.css">
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
 	<link rel="stylesheet" type="text/css" href="/css/room.css">
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 	
 <script type="text/javascript" src="/js/jquery-1.10.1.min.js"></script>	
 </head>
 <script type="text/javascript">
 	sess = "<? session_start(); $_SESSION['session'] = $session; echo $session; ?>";
 	$(document).ready(function(){
-	
-		nick = "anonymous";
-		
-    $( "#nick" ).dialog();
-  	$('.nickbutton').click(function(){
-  		nick = $('#nickvalue').val();
-  		side = $(this).attr('name');
-  	$( "#nick" ).remove();	
-  	});
 	});
 </script>
 <body>
@@ -61,7 +50,7 @@
       });
         </script>
 	<div class="pure-g header">
-		<a href="index.html"><span class="logo">Debate</span></a>
+		<span class="notlogo">A </span><a href="index.html"><span class="logo">Debate</span></a><span class="notlogo"> for a change.</span>
 	</div>
 <div id="wrapper">
 	<div class="pure-g">
@@ -70,6 +59,7 @@
 	</div>
 	<div class="pure-g">
 		<div class="pure-u-1-2 lposts">
+		<div class="card">
 			<div class="pure-u-1 post-content">
 				
 			</div>
@@ -80,7 +70,9 @@
 				</form>
 			</div>
 		</div>
+		</div>
 		<div class="pure-u-1-2 rposts">
+		<div class="card">
 			<div class="pure-u-1 post-content">
 				
 			</div>
@@ -91,13 +83,13 @@
 				</form>
 			</div>
 		</div>
+		</div>
 	</div>
-	<div id="nick">Your Name<input type="text" id="nickvalue"><br><button class="nickbutton" name="support">Support</button><button class="nickbutton" name="against">Against</button></div></div>
 </div>
 
 <script type="text/javascript" src="/js/TB.js"></script>
 <script type="text/javascript" src="/js/roomui.js"></script>
-<script type="text/javascript" src="/js/room.js"></script>
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
 </body>
 </html>

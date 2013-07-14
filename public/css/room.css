@@ -4,20 +4,25 @@
 	background: #DDD;
 }
 .post-content{
-	background: #99A;
+	background: #BBB;
 	height: 460px;
-	border: 2px #9AF solid;
-	border-radius: 5px;
+	border: 0 #666 solid;
+	border-radius: 0;
 	overflow: auto;
 }
 .post{
 	background: #FFF;
 	margin: 1px;
-	border-top: 1px #ABF solid;
-	border-bottom: 1px #ABF solid;
-	border-radius: 5px;
+	border-top: 1px #B89 solid;
+	border-bottom: 1px #B89 solid;
+	border-radius: 0;
 	padding: 12px;
 }
 .post:hover{
 	background: #DDF;
+}
+.card{
+    margin: 10px;
+    box-shadow: rgba(0,0,0,0.4) 0 0 7px 0;
+    border: 1px #AAA solid;
 }

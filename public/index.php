@@ -10,10 +10,6 @@ $app = new \Slim\Slim(
         )
     );
 
-$app->get('/',function () use($app){
-    $app->render('index.html');
-});
-
 $app->get('/room/:name', function ($name) use ($app) {
 		
 	require 'config.php';    
