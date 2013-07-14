@@ -1,6 +1,6 @@
 .videos {
 	margin: 10px 0;
-	height: 100px;
+	height: 200px;
 	background: #DDD;
 }
 .post-content{
@@ -25,4 +25,11 @@
     margin: 10px;
     box-shadow: rgba(0,0,0,0.4) 0 0 7px 0;
     border: 1px #AAA solid;
+
 }
+
+#lvideos div{
+	float: left;
+	height: 200px !important;
+	width: 200px !important;
+	}

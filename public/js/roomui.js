@@ -1,6 +1,6 @@
 function addLpost(content){
 	var newPost = document.createElement("div");
-	var cont = document.createTextNode(content.message);
+	var cont = document.createTextNode(content.nick+":"+content.message);
 	$(newPost).attr("class","pure-u-1 post");
 	$(newPost).attr("data-id",content.id);
 	newPost.appendChild(cont);
@@ -12,7 +12,7 @@ function addLpost(content){
 }
 function addRpost(content){
 	var newPost = document.createElement("div");
-	var cont = document.createTextNode(content.message);
+	var cont = document.createTextNode(content.nick+":"+content.message);
 	$(newPost).attr("class","pure-u-1 post");
 	$(newPost).attr("data-id",content.id);
 	newPost.appendChild(cont);

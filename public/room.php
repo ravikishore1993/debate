@@ -12,6 +12,7 @@
 	sess = "<? session_start(); $_SESSION['session'] = $session; echo $session; ?>";
 	$(document).ready(function(){
 		nick = "anonymous";
+		//setInterval("arrangeVideo",100);
 
     $( "#nick" ).dialog();
   	$('.nickbutton').click(function(){
@@ -20,6 +21,7 @@
   	$( "#nick" ).remove();	
   	});
 	});
+	
 </script>
 <body>
 	 <div id="myPublisherDiv"></div>
@@ -30,12 +32,14 @@
 			var session = TB.initSession(sessionId);
           session.addEventListener('sessionConnected', sessionConnectedHandler);
           session.connect(apiKey, token);
+          TB.setLogLevel(TB.DEBUG); 
           
           function sessionConnectedHandler(event) {
-            var publisher = TB.initPublisher(apiKey, 'myPublisherDiv');
+            var id ;
+            		
+            var publisher = TB.initPublisher(apiKey, 'my0');
             session.publish(publisher);
             subscribeToStreams(event.streams);
-          	console.log(event);
           }
 
           function streamCreatedHandler(event) {
@@ -43,9 +47,12 @@
 			}
 			function subscribeToStreams(streams) {
 				for (var i = 0; i < streams.length; i++) {
+					if( $('#lvideos div:last-child').attr('data-number') == undefined ) id = 0;
+            else id = $('#lvideos div:last-child').attr('data-number') + 1;
+            $('#lvideos').append("<div id='my"+id+"' data-number="+id+" ></div>");
 					var stream = streams[i];
 					if (stream.connection.connectionId != session.connection.connectionId) {
-						session.subscribe(stream);
+						session.subscribe(stream , 'my'+id);
 					}
 				}
 			}
@@ -62,8 +69,8 @@
 	</div>
 <div id="wrapper">
 	<div class="pure-g">
-		<div class="pure-u-1-2 videos">Video Dummy</div>
-		<div class="pure-u-1-2 videos">Video Dummy</div>
+		<div class="pure-u-1-2 videos"><div id="lvideos"><div id='my0' data-number='0' ></div></div></div>
+		<div class="pure-u-1-2 videos"></div>
 	</div>
 	<div class="pure-g">
 		<div class="pure-u-1-2 lposts">
@@ -96,7 +103,7 @@
 	<div id="nick">Your Name<input type="text" id="nickvalue"><br><button class="nickbutton" name="support">Support</button><button class="nickbutton" name="against">Against</button></div></div>
 </div>
 
-<script type="text/javascript" src="/js/TB.js"></script>
+<script src='https://swww.tokbox.com/webrtc/v2.0/js/TB.min.js'></script>
 <script type="text/javascript" src="/js/roomui.js"></script>
 <script type="text/javascript" src="/js/room.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>

@@ -74,8 +74,8 @@ $(document).ready(function(){
     console.log(data.query.results.bossresponse.web.results.result);
     var arr = data.query.results.bossresponse.web.results.result;
     var r = '<ul>';
-    for (var i = 0; i < arr.length; i++) {
-      r += "<li><br><div class='news-post-abstract'>"+arr[i].abstract.content+"</div><a href='"+arr[i].clickurl+"'>Link</a><br></li><hr>";
+    for (var i = 1; i < arr.length; i++) {
+      r += "<li><br><div class='news-post-abstract'>"+arr[i].abstract.content+"</div><a href='"+arr[i].clickurl+"'>Source</a><br></li><hr>";
     };
     r += "</ul>";
     $(".news-cont").html(r);
