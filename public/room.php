@@ -50,7 +50,7 @@
       });
         </script>
 	<div class="pure-g header">
-		<span class="notlogo">A </span><a href="index.html"><span class="logo">Debate</span></a><span class="notlogo"> for a change.</span>
+		<a href="index.html"><span class="logo">Debate</span></a><span class="notlogo"> for a change.</span>
 	</div>
 <div id="wrapper">
 	<div class="pure-g">
