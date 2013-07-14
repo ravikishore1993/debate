@@ -1,10 +1,23 @@
-.rooms, .newroom{
-    margin: 50px 0;
+.card{
+    margin: 30px;
+    box-shadow: rgba(0,0,0,0.4) 0 0 7px 0;
+    border: 1px #AAA solid;
 }
-.rooms-head, .newroom-head{
+.rooms-head, .newroom-head, .news-head{
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 125%;
     padding: 10px;
-    background: #06C;
-    color: #FFF;
+    background: #FFF;
+    color: #000; 
+}
+.news-cont{
+    height: 550px;
+    overflow: auto;
+}
+.rooms-cont{
+    height: 302px;
+    overflow: auto;
 }
 .rooms-cont ul{
     list-style: none;
@@ -12,9 +25,31 @@
     padding: 0;
 }
 .rooms-cont ul li{
-	background: #EEF;
+    background: #EEE;
     padding: 10px;
 }
 .rooms-cont ul li:hover{
-	background: #FFF;
+    background: #FFF;
+}
+.news{
+}
+.news-cont ul{
+    background: #EEE;
+    list-style: none;
+    margin: 0;
+    padding-left: 5px;
+}
+.news-cont ul li{
+    background: #EEE;
+}
+.news-cont ul li .news-post-head{
+    font-weight: bold;
+    padding: 4px;
+}
+.news-cont ul li a{
+    font-size: 80%;
+    color: #09C;
+}
+.newroom-cont form{
+    margin: 30px 0;
 }
