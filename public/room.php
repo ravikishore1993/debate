@@ -27,7 +27,11 @@
 <body>
 	 <div id="myPublisherDiv"></div>
         <script type="text/javascript">
-          $(document).ready(function(){var apiKey = "35046632";
+          $(document).ready(function(){
+
+          	$('#topic').text(decodeURIComponent(document.location.pathname.substr(6,document.location.pathname.length)));
+
+          	var apiKey = "35046632";
           var sessionId = "<? echo $session; ?>";
           var token = "<? echo $token; ?>";
 			var session = TB.initSession(sessionId);
