@@ -11,10 +11,10 @@ $(document).ready(function(){
   });
 
   $("#createRoom").click(function(){
-  	window.open("room.php/"+$("#room").val(),"_self");
+  	window.open("room/"+$("#room").val(),"_self");
   });
 
   $(".rooms-cont ul li").click(function(){
-  	window.open("room.php/"+$(this).text(),"_self");
+  	window.open("room/"+$(this).text(),"_self");
   })
 });

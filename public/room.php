@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/pure-min.css">
 	<link rel="stylesheet" type="text/css" href="/css/base.css">
 	<link rel="stylesheet" type="text/css" href="/css/room.css">
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 	
 <script type="text/javascript" src="/js/jquery-1.10.1.min.js"></script>	
 </head>
