@@ -1,5 +1,7 @@
 $(document).ready(
     function(){
+      var lp = 0;
+      var rp = 0;
       $('#for-button').click(function(){
           $.ajax({
            type: "POST",
@@ -9,6 +11,8 @@ $(document).ready(
            {$('#for-text').val("");
            }
          });
+          lp++;
+          $("#lcomments").text(parseInt($("#lcomments").text())+1);
           return false;
 
   });
@@ -23,6 +27,8 @@ $(document).ready(
             $('#against-text').val("");
            }
          });
+          rp++;
+          $("#rcomments").text(parseInt($("#rcomments").text())+1);
           return false;
   });
 

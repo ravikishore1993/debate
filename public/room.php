@@ -67,6 +67,7 @@
         </script>
 	<div class="pure-g header">
 		<a href="index.html"><span class="logo">Debate</span></a><span class="notlogo"> for a change.</span>
+		<span id="topic"></span>
 	</div>
 <div id="wrapper">
 	<div class="pure-g">
@@ -76,6 +77,10 @@
 	<div class="pure-g">
 		<div class="pure-u-1-2 lposts">
 		<div class="card">
+			<div class="pure-u-1 post-head">
+				Support <span id="lcomments">0</span>
+			</div>
+
 			<div class="pure-u-1 post-content">
 				
 			</div>
@@ -89,6 +94,10 @@
 		</div>
 		<div class="pure-u-1-2 rposts">
 		<div class="card">
+			<div class="pure-u-1 post-head">
+				Oppose <span id="rcomments">0</span>
+			</div>
+
 			<div class="pure-u-1 post-content">
 				
 			</div>
