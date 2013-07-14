@@ -31,8 +31,8 @@ setInterval(againstcheck,1000);
 
 
 function forcheck(){
-  if($('.lposts div:last-child()').attr('data-id') == undefined ) lid = 0;
-  else lid = $('.lposts div:last-child()').attr('data-id');
+  if($('.lposts div div div:last-child()').attr('data-id') == undefined ) lid = 0;
+  else lid = $('.lposts div div div:last-child()').attr('data-id');
   $.ajax({
   url: '/for',
   data: {'id':lid,'session':sess},
@@ -49,8 +49,8 @@ function forcheck(){
 
 
 function againstcheck(){
-  if($('.rposts div:last-child()').attr('data-id') == undefined ) rid = 0;
-  else rid = $('.rposts div:last-child()').attr('data-id');
+  if($('.rposts div div div:last-child()').attr('data-id') == undefined ) rid = 0;
+  else rid = $('.rposts div div div:last-child()').attr('data-id');
   
   $.ajax({
   url: '/against',

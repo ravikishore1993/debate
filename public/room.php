@@ -11,6 +11,14 @@
 <script type="text/javascript">
 	sess = "<? session_start(); $_SESSION['session'] = $session; echo $session; ?>";
 	$(document).ready(function(){
+		nick = "anonymous";
+
+    $( "#nick" ).dialog();
+  	$('.nickbutton').click(function(){
+  		nick = $('#nickvalue').val();
+  		side = $(this).attr('name');
+  	$( "#nick" ).remove();	
+  	});
 	});
 </script>
 <body>
@@ -85,11 +93,13 @@
 		</div>
 		</div>
 	</div>
+	<div id="nick">Your Name<input type="text" id="nickvalue"><br><button class="nickbutton" name="support">Support</button><button class="nickbutton" name="against">Against</button></div></div>
 </div>
 
 <script type="text/javascript" src="/js/TB.js"></script>
 <script type="text/javascript" src="/js/roomui.js"></script>
-<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="/js/room.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
 </body>
 </html>

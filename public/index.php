@@ -55,6 +55,12 @@ $app->get('/for', function () use ($app) {
 $app->get('/against', function () use ($app) {
 	$app->render('against.php');
 });
+
+
+$app->get('/', function () use ($app) {
+    $app->render('index.html');
+});
+
 $app->run();
 
 ?>
