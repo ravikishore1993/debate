@@ -12,10 +12,12 @@
     color: #000; 
 }
 .news-cont{
+    background: #EEE;
     height: 550px;
     overflow: auto;
 }
 .rooms-cont{
+    background: #EEE;
     height: 302px;
     overflow: auto;
 }
@@ -32,6 +34,9 @@
     background: #FFF;
 }
 .news{
+}
+.newroom{
+    background: #EEE;
 }
 .news-cont ul{
     background: #EEE;
