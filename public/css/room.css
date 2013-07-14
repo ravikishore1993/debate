@@ -3,6 +3,14 @@
 	height: 200px;
 	background: #DDD;
 }
+.post-head{
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 125%;
+    padding: 10px;
+    background: #FFF;
+    color: #000; 
+}
 .post-content{
 	background: #BBB;
 	height: 460px;
@@ -51,3 +59,7 @@
 		border-radius: 0;
 		width: 75%
 	}
+
+.post-head span{
+	float: right;
+}
